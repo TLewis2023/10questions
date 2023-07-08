@@ -1,0 +1,53 @@
+// 1
+function printName(name) {
+  console.log(name);
+}
+// 2
+function greetUser(username) {
+  return "Hello, " + username + "!";
+}
+// 3
+const COFFEE_PRICE = 3.5;
+ function buyCoffee(dollars) {
+  return dollars - COFFEE_PRICE;
+}
+// 4
+function checkWeather(condition, temperature) {
+  if (condition === "sunny" && temperature > 25) {
+    return "Wear sunglasses and light clothing.";
+  } else if (condition === "rainy") {
+    return "Don't forget your umbrella.";
+  } else {
+    return "Wear appropriate clothing for the weather.";
+  }
+}
+//5
+function areaOfTriangle(base, height) {
+  return (base * height) / 2;
+}
+// 6
+function diceRoller() {
+  return Math.floor(Math.random() * 6) + 1;
+}
+// 7
+function helloAliyahOrHakeem() {
+  var username = prompt("Please enter your username:");
+  if (username === "aliyah" || username === "hakeem") {
+    console.log("Hello, " + username + "!");
+  }
+}
+// 8. getInitials function
+function getInitials(fullName) {
+  var names = fullName.split("TahJae Lewis ");
+  var initials = "TL";
+  for (var i = 0; i < names.length; i++) {
+    initials += names[i][0].toUpperCase();
+  }
+  return initials;
+}
+// 9.
+const myHobbies = [ basketball, VideoGames, Coloring, Football, Netflix]
+  console.log(myhobbies);
+// 10.
+function containedInStringArray (array, string)
+  return array.includes(string);
